@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private void getData() {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         try {
-            String apiLink = "https://api.covid19india.org/state_district_wise.json";
+            String apiLink = "https://data.covid19india.org/state_district_wise.json";
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, apiLink, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
